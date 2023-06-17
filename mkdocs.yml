@@ -13,7 +13,7 @@ plugins:
 
 theme: 
   name: material
-  logo: assets/logo.png
+  logo: assets/logo.svg
   features:
     - navigation.instant
     # - navigation.tabs
