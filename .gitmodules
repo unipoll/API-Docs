@@ -1,0 +1,3 @@
+[submodule "docs/api-docs"]
+	path = docs/api-docs
+	url = https://github.com/unipoll/API.wiki
