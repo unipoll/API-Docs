@@ -13,22 +13,13 @@ jobs:
     # runs-on: arc-runner-set
     runs-on: self-hosted
     steps:
-      - name: Get token
-        id: get_token
-        uses: machine-learning-apps/actions-app-token@master
-        with:
-          APP_PEM: ${{ secrets.APP_PEM }}
-          APP_ID: ${{ secrets.APP_ID }}
       - uses: actions/checkout@v3
         with:
           submodules: 'true'
-          token: ${{ steps.get_token.outputs.app_token }}
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-
-
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
@@ -36,6 +27,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-
-
       - run: mkdocs gh-deploy --force
