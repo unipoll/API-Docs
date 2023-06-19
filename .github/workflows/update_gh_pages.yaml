@@ -9,11 +9,20 @@ permissions:
   contents: write
 jobs:
   deploy:
-    runs-on: arc-runner-set
+    # k8s hosted Arc Runner not installed git for checking out submodules, see issue #2  
+    # runs-on: arc-runner-set
+    runs-on: self-hosted
     steps:
+      - name: Get token
+        id: get_token
+        uses: machine-learning-apps/actions-app-token@master
+        with:
+          APP_PEM: ${{ secrets.APP_PEM }}
+          APP_ID: ${{ secrets.APP_ID }}
       - uses: actions/checkout@v3
         with:
           submodules: 'true'
+          token: ${{ steps.get_token.outputs.app_token }}
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
