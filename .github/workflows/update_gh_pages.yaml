@@ -1,6 +1,7 @@
 name: update_gh_pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master 
