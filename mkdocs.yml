@@ -16,7 +16,7 @@ theme:
   logo: assets/logo.svg
   features:
     - navigation.instant
-    # - navigation.tabs
+    - navigation.tabs
     - navigation.expand
     - navigation.sections
     - navigation.top
@@ -28,6 +28,7 @@ theme:
     - content.tabs
     - content.code.annotate
     - content.code.copy
+    # - navigation.indexes 
   language: en
   palette:
     - scheme: default
