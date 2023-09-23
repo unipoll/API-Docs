@@ -1,6 +1,6 @@
 site_name: University Polling
 
-plugins:
+# plugins:
   # - mike:
   #     # These fields are all optional; the defaults are as below...
   #     alias_type: symlink
