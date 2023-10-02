@@ -1,3 +1,6 @@
 [submodule "docs/api-docs"]
 	path = docs/api-docs
 	url = https://github.com/unipoll/api.wiki
+[submodule "docs/web-app-docs"]
+	path = docs/web-app-docs
+	url = https://github.com/unipoll/angular.wiki.git
