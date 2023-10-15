@@ -37,6 +37,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: true
       - name: Copy API changelog from artifacts
         uses: actions/download-artifact@v3
         with:
