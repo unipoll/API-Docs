@@ -1,0 +1,44 @@
+name: Download API changelog and add to the docs
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [update_api_changelog]
+  
+jobs:
+  get_api_changelog:
+    runs-on: arc-runner-k8s
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: 'unipoll/api'
+      - name: Copy API changelog to artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: api_changelog
+          path: api/CHANGELOG.md
+  update_docs:
+    needs: get_api_changelog
+    runs-on: arc-runner-k8s
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout docs
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copy API changelog from artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: api_changelog
+          path: docs/api_docs/changelog.md
+      - name: Commit update
+        run: |
+          git config --global user.name 'Bot'
+          git config --global user.email 'bot@noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add docs/api_docs/changelog.md
+          git commit -m "Update API changelog on release" && git push || echo "No changes to commit"
