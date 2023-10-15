@@ -19,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: api_changelog
-          path: api/CHANGELOG.md
+          path: CHANGELOG.md
   update_docs:
     needs: get_api_changelog
     runs-on: arc-runner-k8s
@@ -34,7 +34,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: api_changelog
-          path: docs/api_docs/changelog.md
+          path: api_docs/changelog.md
       - name: Commit update
         run: |
           git config --global user.name 'Bot'
