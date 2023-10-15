@@ -7,7 +7,8 @@ on:
   
 jobs:
   update_submodules:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: arc-runner-k8s
     permissions:
       contents: write
       pull-requests: write
