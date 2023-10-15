@@ -1,4 +1,4 @@
-name: Download API changelog and add to the docs
+name: Update API Changelog
 
 on:
   workflow_dispatch:
