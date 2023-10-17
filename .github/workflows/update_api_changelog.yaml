@@ -42,7 +42,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: api_changelog
-          path: docs/api_docs/changelog.md
+          path: docs/api-docs/changelog.md
       - name: Commit update
         run: |
           git config --global user.name 'Bot'
