@@ -1,6 +1,7 @@
 site_name: University Polling
 
-# plugins:
+plugins:
+  - termynal
   # - mike:
   #     # These fields are all optional; the defaults are as below...
   #     alias_type: symlink
@@ -14,6 +15,7 @@ site_name: University Polling
 theme: 
   name: material
   logo: assets/logo.svg
+  favicon: assets/favicon.ico
   features:
     - navigation.instant
     - navigation.tabs
@@ -21,14 +23,14 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.path
-    - toc.integrate
+    # - toc.integrate
     - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs
     - content.code.annotate
     - content.code.copy
-    # - navigation.indexes 
+    - navigation.indexes 
   language: en
   palette:
     - scheme: default
@@ -68,7 +70,8 @@ repo_url: https://github.com/unipoll
 repo_name: ""
 
 # Markdown extensions
-markdown_extensions: 
+markdown_extensions:
+  - tables
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -78,7 +81,13 @@ markdown_extensions:
       generic: true
   - footnotes
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.emoji:
@@ -86,3 +95,33 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist
   - attr_list
+
+nav:
+  - Home:
+    - 'index.md'
+    - About: 'about/index.md'
+  - API Documentation:
+    - 'api-docs/index.md'
+    - Usage:
+      - 'api-docs/usage/index.md'
+      - 'api-docs/usage/Quick Start.md'
+      - 'api-docs/usage/Configuration.md'
+      - 'api-docs/usage/Deployment.md'
+      - 'api-docs/usage/Overview.md'
+      - 'api-docs/usage/Permissions.md'
+      - 'api-docs/usage/Authentication.md'
+      - 'api-docs/usage/OpenAPI.md'
+      - 'api-docs/usage/API Reference.md'
+    - Development:
+      - 'api-docs/development/index.md'
+      - 'api-docs/development/Structure.md'
+      - 'api-docs/development/Libraries.md'
+      - 'api-docs/development/Release.md'
+      - 'api-docs/development/Testing.md'
+  - Web App:
+    - 'web-app-docs/index.md'
+    - Usage:
+      - 'web-app-docs/usage/index.md'
+      - 'web-app-docs/usage/Quick Start.md'
+    - Development:
+      - 'web-app-docs/development/index.md'
