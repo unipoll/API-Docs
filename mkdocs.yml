@@ -118,6 +118,7 @@ nav:
       - 'api-docs/development/Libraries.md'
       - 'api-docs/development/Release.md'
       - 'api-docs/development/Testing.md'
+    - Changelog: 'api-docs/CHANGELOG.md'
   - Web App:
     - 'web-app-docs/index.md'
     - Usage:
