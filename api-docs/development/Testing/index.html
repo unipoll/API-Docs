@@ -1,0 +1,2018 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Release/">
+      
+      
+        <link rel="next" href="../../CHANGELOG/">
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Local Testing - University Polling</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../termynal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#local-testing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="University Polling" class="md-header__button md-logo" aria-label="University Polling" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            University Polling
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Local Testing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/unipoll" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  API Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../web-app-docs/" class="md-tabs__link">
+          
+  
+    
+  
+  Web App
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="University Polling" class="md-nav__button md-logo" aria-label="University Polling" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    University Polling
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/unipoll" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../usage/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/Quick%20Start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/Configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/Deployment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployment of the API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/Permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Permission System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/Authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/OpenAPI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/API%20Reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Libraries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Release/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Build and Release
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Local Testing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Local Testing
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#back-end-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back-End Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-End Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests-user-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests User functionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tests User functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-create-an-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can create an account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-register-with-an-existing-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can register with an existing email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-new-user-can-login-with-the-incorrect-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the new user can login with the incorrect email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-new-user-can-login-with-the-incorrect-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the new user can login with the incorrect password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-new-user-can-login-with-the-correct-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the new user can login with the correct credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-get-their-own-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can get their own information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-user-can-delete-their-own-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if User can delete their own account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-group-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Group functionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Group functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-create-a-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can create a group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-add-other-users-to-the-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can add other users to the group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-delete-a-non-existing-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can delete a non-existing group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-delete-a-group-they-own" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can delete a group they own
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming convention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytest configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixtures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixtures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytest Coverage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flake8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flake8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mypy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tox
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-testing-with-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated testing with GitHub Actions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postman-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postman Testing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../web-app-docs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Web App
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Web App
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../web-app-docs/usage/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web-app-docs/usage/Quick%20Start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../web-app-docs/development/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#back-end-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back-End Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-End Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests-user-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests User functionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tests User functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-create-an-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can create an account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-register-with-an-existing-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can register with an existing email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-new-user-can-login-with-the-incorrect-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the new user can login with the incorrect email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-new-user-can-login-with-the-incorrect-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the new user can login with the incorrect password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-new-user-can-login-with-the-correct-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the new user can login with the correct credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-get-their-own-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can get their own information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-user-can-delete-their-own-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if User can delete their own account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-group-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Group functionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Group functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-create-a-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can create a group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-add-other-users-to-the-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can add other users to the group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-delete-a-non-existing-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can delete a non-existing group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-to-see-if-the-user-can-delete-a-group-they-own" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test to see if the user can delete a group they own
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming convention
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytest configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixtures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixtures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pytest Coverage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flake8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flake8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mypy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tox
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-testing-with-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated testing with GitHub Actions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postman-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postman Testing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="local-testing">Local Testing</h1>
+<h2 id="back-end-testing">Back-End Testing</h2>
+<h3 id="pytest"><a href="https://docs.pytest.org/">Pytest</a></h3>
+<p>This library is used for unit testing. An alternative to default unit-testing package. The biggest difference between two libraries is that Pytest can run tests simultaneously for saving time. It supports <a href="https://docs.pytest.org/en/6.2.x/fixture.html">Fixtures</a> and use testing asynchronous functions. Most importantly it comes almost ready out of the box with <a href="https://fastapi.tiangolo.com/">FastAPI</a>.</p>
+<p>Pytest can be run on specific files or the whole directory by passing arguments:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>pytest
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">...</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">$ </span>pytest<span class="w"> </span>tests
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">...</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="gp">$ </span>pytest<span class="w"> </span>tests/test_1_users.py
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="go">...</span>
+</code></pre></div>
+<p>In addition, test occasionally print out the information(custom messages) about the current test. By default pytest hides user output, this can be fixed with <code>-s</code> argument. 
+For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp">$ </span>pytest<span class="w"> </span>-s
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">=============================== test session starts ================================</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="go">platform linux -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="go">rootdir: /home/mpisman/Documents/PollingApp, configfile: pytest.ini, testpaths: tests</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="go">plugins: trio-0.8.0, anyio-3.6.2, cov-4.0.0, Faker-15.3.2, asyncio-0.20.2</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="go">asyncio: mode=Mode.AUTO</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="go">collected 10 items</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="go">tests/test_1_users.py</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="go">TESTING:  Registering new user:  agilbert@ucmerced.edu</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="go">INFO:     User 639e94f54c8775804e127b92 has registered.</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="go">SUCCESS:  New user ha been registered:  agilbert@ucmerced.edu with id:  639e94f54c8775804e127b92</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="go">.</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="go">TESTING:  Attempting to register a new user with an existing email:  agilbert@ucmerced.edu</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="go">SUCCESS:  The new user failed to register because email already exists:  agilbert@ucmerced.edu</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="go">.</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="go">TESTING:  Attempting to login with incorrect email</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="go">SUCCESS:  The new user received a 404 &quot;LOGIN_BAD_CREDENTIALS&quot; error</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="go">.</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="go">TESTING:  Attempting to login with incorrect password</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="go">SUCCESS:  The new user received a 404 &quot;LOGIN_BAD_CREDENTIALS&quot; error</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="go">.</span>
+</code></pre></div>
+<h3 id="tests-user-functionality">Tests User functionality</h3>
+<h4 id="test-to-see-if-the-user-can-create-an-account">Test to see if the user can create an account</h4>
+<p>1) Try to Register a new user (Success)
+2) Validate: status is 201
+3) Validate: id, email, first name, last name</p>
+<h4 id="test-to-see-if-the-user-can-register-with-an-existing-email">Test to see if the user can register with an existing email</h4>
+<p>1) Try to register a new user with the same email (Fail)
+2) Validate: status is 400
+3) Validate: details = "REGISTER_USER_ALREADY_EXISTS"</p>
+<h4 id="test-to-see-if-the-new-user-can-login-with-the-incorrect-email">Test to see if the new user can login with the incorrect email</h4>
+<p>1) Try to login with the incorrect email (Fail)
+2) Validate: status is 400
+3) Validate: details = "LOGIN_BAD_CREDENTIALS"</p>
+<h4 id="test-to-see-if-the-new-user-can-login-with-the-incorrect-password">Test to see if the new user can login with the incorrect password</h4>
+<p>1) Try to login with the incorrect email (Fail)
+2) Validate: status is 400
+3) Validate: details = "LOGIN_BAD_CREDENTIALS"</p>
+<h4 id="test-to-see-if-the-new-user-can-login-with-the-correct-credentials">Test to see if the new user can login with the correct credentials</h4>
+<p>1) Try to login with the correct credentials (Success)
+2) Validate: status is 200
+3) Validate: token_type = "bearer"
+4) Validate: access_token field exists in the response and it is not empty
+5) Set temp user token to the access_token to be used in the next tests</p>
+<h4 id="test-to-see-if-the-user-can-get-their-own-information">Test to see if the user can get their own information</h4>
+<p>1) Try to get the user information with the token passed in the header (Success)
+2) Validate: status is 200
+3) Validate: id, email, first name, last name, is_active, is_superuser, is_verified</p>
+<h4 id="test-to-see-if-user-can-delete-their-own-account">Test to see if User can delete their own account</h4>
+<p>1) Find user by id to make sure it exists (Success)
+2) Try to delete the user
+3) Validate: status is 204 (Success)</p>
+<h3 id="test-group-functionality">Test Group functionality</h3>
+<p>This test relies on the user functionality to be working correctly, and uses the functions from the previous test.</p>
+<h4 id="test-to-see-if-the-user-can-create-a-group">Test to see if the user can create a group</h4>
+<p>1) Create a temporary user(group owner) for test and login (Success)
+2) The new user requests list of groups(should be empty) (Success)
+3) Validate: status is 200
+4) Validate: the list of groups is empty
+5) The user creates a group (Success)
+6) Validate: status is 201
+7) Validate: id, name
+8) The user gets list of groups. (Success)
+9) Validate: status is 200
+10) Validate: the length of the list of groups is 1
+11) Validate: the only group has the name of the group created in step 5 and the role listed as owner
+12) User gets the group information by id. (Success)
+13) Validate: name, description, owner name and email
+14) The user gets list of admins. (Success)
+15) Validate: status is 200
+16) Validate: the length of the list of admins is 0 (the owner is not counted)
+17) The user gets list of user (a member of user role) (Success)
+18) Validate: status is 200
+19) Validate: the length of the list of members is 0 (the owner is not counted)
+20) The user gets list of members (any member) (Success)
+21) Validate: status is 200
+22) Validate: the length of the list of members is 1
+23) Validate: email and role of the member is the owner
+24) The user get the owner information (Success)
+25) Validate: status is 200
+26) Validate: email and name of the owner</p>
+<h4 id="test-to-see-if-the-user-can-add-other-users-to-the-group">Test to see if the user can add other users to the group</h4>
+<p>1) Register 13 new users, storing 3 in one list(admins) and the rest in a separate list (regular users) (Success)
+2) The owner sends a request to add members from the payload. which is a dictionary of user emails and their roles (Success)
+3) Validate: status is 201
+4) The owner gets list of members (Success)
+5) Validate: status is 200
+6) Traverse the list of members and validate that all users have been added (Success)
+7) The owner gets list of users (Success)
+8) Validate: status is 200
+9) Validate: the length of the list of users is 10
+10) Validate: the list of users contains all the correct email addresses
+11) The owner gets list of admins (Success)
+12) Validate: status is 200
+13) Validate: the length of the list of admins is 3
+14) Validate: the list of admins contains all the correct email addresses</p>
+<h4 id="test-to-see-if-the-user-can-delete-a-non-existing-group">Test to see if the user can delete a non-existing group</h4>
+<p>1) The owner sends a request to delete a group that does not exist (Fail)
+2) Validate: status is 404
+3) Validate: details = "Group with id {id} not found"</p>
+<h4 id="test-to-see-if-the-user-can-delete-a-group-they-own">Test to see if the user can delete a group they own</h4>
+<p>1) The owner sends a request to get the group information (Success)
+2) Validate: status is 200
+3) Validate: name
+4) The owner sends a request to delete the group (Success)
+5) Validate: status is 204
+6) The owner sends a request to get the group information (Fail)
+7) Validate: status is 404</p>
+<h3 id="naming-convention">Naming convention</h3>
+<p>For pytest to recognize test files, the file name should have a prefix <code>test_</code>. By default, pytest runs test files in the alphabetical order, so to make test run in a specific order, the easiest solution is to name them as <code>test_ORDER_NAME</code>, where order is an integer, and name is a short description of the test.
+For instance:
+<code>./tests/test_1_users.py</code>
+<code>./tests/test_2_groups.py</code></p>
+<h3 id="pytest-configuration">Pytest configuration</h3>
+<p>The small configuration can found in <code>./pytest.ini</code>:
+ - Sets pytest to use asyncio
+ - Adds all files inside <code>./tests/</code> for testing
+ - Specifies some common warning which should not be displayed</p>
+<h3 id="fixtures">Fixtures</h3>
+<p>Another file, <code>./tests/conftest.py</code>, provides fixtures for database use and asynhronous client to make requests in the same session. </p>
+<h3 id="pytest-coverage">Pytest Coverage</h3>
+<p>We use <a href="https://pytest-cov.readthedocs.io/">pytest-cov</a> to provide additional information of testing coverage in terms of code lines. Basically, the pytest keeps track of which lines of source code have been executed during tests. Ideally, the coverage should be near 100% on all files, which would indicate that all code has been tested in some way.</p>
+<p>Here is example of coverage report that will be provided at the end of each test:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---------- coverage: platform linux, python 3.11.0-final-0 -----------
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Name                         Stmts   Miss  Cover
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>------------------------------------------------
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>app/__init__.py                  0      0   100%
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>app/app.py                      24      0   100%
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>app/config.py                   12      0   100%
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>app/exceptions/__init__.py       1      0   100%
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>app/exceptions/group.py         30     11    63%
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>app/exceptions/user.py          19      9    53%
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>------------------------------------------------
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>TOTAL                          474    105    78%
+</code></pre></div>
+In the example above, since some of the exceptions were not tested, we only got partial coverage.</p>
+<h3 id="faker"><a href="https://faker.readthedocs.io/">Faker</a></h3>
+<p>This Library is used for generating random data such as names, email, address, etc. It's useful for testing.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">fake</span> <span class="o">=</span> <span class="n">faker</span><span class="o">.</span><span class="n">Fake</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">fake</span><span class="o">.</span><span class="n">email</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="flake8"><a href="https://flake8.pycqa.org/en/latest/">Flake8</a></h3>
+<p>Flake8 is a combination of tools that checks that files follow <strong>pep8</strong> styling format. The configuration can be specified inside <code>pyproject.toml</code>. The only difference I made from default configuration is maximum length of the line, the default value of 80 is too small for modern widescreens, so we use 120 instead. Otherwise the formatting becomes to tedious.</p>
+<p>After running, the tool will output a line number that needs to be fixed as well as short description of the error. Therefore, a successful run will have no output.</p>
+<p>Examples of erroneous run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">$ </span>flake8<span class="w"> </span>app<span class="w"> </span>--max-line-length<span class="o">=</span><span class="m">120</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="go">app/app.py:13:1: W293 blank line contains whitespace</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="go">app/app.py:54:1: E302 expected 2 blank lines, found 0</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="go">app/app.py:67:6: W292 no newline at end of file</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="go">app/config.py:9:51: W291 trailing whitespace</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="go">app/config.py:10:1: W293 blank line contains whitespace</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="go">app/config.py:13:1: W293 blank line contains whitespace</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="go">app/config.py:14:1: E302 expected 2 blank lines, found 1</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="go">app/config.py:16:22: W292 no newline at end of file</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="go">app/exceptions/__init__.py:1:1: F401 &#39;app.exceptions.group&#39; imported but unused</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="go">app/exceptions/__init__.py:1:1: F401 &#39;app.exceptions.user&#39; imported but unused</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="go">app/exceptions/__init__.py:1:39: W292 no newline at end of file</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="go">app/models/user_manager.py:22:1: W293 blank line contains whitespace</span>
+</code></pre></div>
+<h3 id="mypy"><a href="http://mypy-lang.org/">Mypy</a></h3>
+<p>There are many good reasons to use typing in Python application. However, one of the bigger benefits comes from using Pydantic models. By defining types, Pydantic will automatically implement validation check, when you will try to set/update the value. If the type of value differs from the one you have defined before, Pydantic will raise an error. FastAPI further extends this functionality by using Pydantic models for schemas of HTTP requests and responses. Meaning, if a user will try to send data that does not follow the schema, they will get a <em>"422 Unprocessed entity"</em> error. Vise versa, if server will try to send a response that does not follow the schema, it will most likely fail due to exception. For this reason, typing is crucial in the fastAPI application.</p>
+<p>Mypy is a static type checker library for Python, which helps solve the issues described above. Coupled with Pydantic plugin it check all of the modes and function, and it manages nested types very well.</p>
+<p>On successful run you should get the following message.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gp">$ </span>mypy<span class="w"> </span>app
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="go">Success: no issues found in 20 source files</span>
+</code></pre></div>
+<p>In case of any errors, the mypy will provide a detailed output. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gp">$ </span>mypy<span class="w"> </span>app
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="go">app/utils/colored_dbg.py:1: error: Library stubs not installed for &quot;colorama&quot;  [import]</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="go">app/utils/colored_dbg.py:1: note: Hint: &quot;python3 -m pip install types-colorama&quot;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="go">app/utils/colored_dbg.py:1: note: (or run &quot;mypy --install-types&quot; to install all missing stub packages)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="go">app/utils/colored_dbg.py:1: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="go">app/mongo_db.py:2: error: Skipping analyzing &quot;motor.motor_asyncio&quot;: module is installed, but missing library stubs or py.typed marker  [import]</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="go">app/mongo_db.py:2: error: Skipping analyzing &quot;motor&quot;: module is installed, but missing library stubs or py.typed marker  [import]</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="go">app/routes/group.py:19: error: Module &quot;app.schemas.user&quot; has no attribute &quot;UserID&quot;  [attr-defined]</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="go">app/tests/test_users.py:51: error: &quot;Response&quot; has no attribute &quot;get&quot;  [attr-defined]</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="go">app/tests/test_groups.py:123: error: Value of type &quot;Response&quot; is not indexable  [index]</span>
+</code></pre></div>
+<p>At times, third parties do a poor job of specifying types for parameters of functions and their return objects. In case of error/warning that is not fixable, you can place a comment on the same line causing error to ignore type check. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">some_function</span><span class="p">()</span>  <span class="c1"># type: ignore</span>
+</code></pre></div>
+<h3 id="tox"><a href="https://tox.wiki/en/latest/">Tox</a></h3>
+<p>tox aims to automate and standardize testing in Python. It is a generic virtual environment management and test command line tool. tox allows us to create multiple virtual environments with different python versions and run multiple test, such as flake8, mypy, etc. Coupled with <a href="https://pypi.org/project/tox-gh-actions/">tox-gh-actions</a>, it becomes a powerful tool that can help testing project on various systems automatically using GitHub Actions.</p>
+<p>The configuration can be found in <code>tox.ini</code></p>
+<p>We use 2 Python versions(3.10 and 3.11) with the latest ubuntu image(this also has to be specified in <code>workflows</code>). However, other versions of python can be easily added, as well as, other operating systems. Tox creates a virtual environment for each python version and runs all tests inside of it. First it runs pytest, then flake8 and mypy.</p>
+<p>At the end of all tests, you should see a message indicating that tox has successfully ran all tests using 2 virtual environments(python
+3.10 and 3.11), and it also ran mypy and flake8. In case of any errors <strong>tox</strong> will let us know.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="go">  py310: OK (18.02=setup[5.09]+cmd[12.93] seconds)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="go">  py311: OK (17.10=setup[4.27]+cmd[12.83] seconds)</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="go">  flake8: OK (3.95=setup[3.77]+cmd[0.18] seconds)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="go">  mypy: OK (4.19=setup[3.78]+cmd[0.41] seconds)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="go">  congratulations :) (43.31 seconds)</span>
+</code></pre></div>
+<h2 id="automated-testing-with-github-actions">Automated testing with <a href="https://docs.github.com/en/actions">GitHub Actions</a></h2>
+<p>Github actions allow us to automatically run tests, update documentation, release new version of builds, and other.</p>
+<p>In our case, we use GitHub actions to run tox tests on every on pull request to the Development branch. This is a great way to ensure that the code is always in a working state before releasing a new version.</p>
+<p>The configuration can be found in <code>.github/workflows/python-app.yml</code>. The workflow will fail if any of the tests fail. As an indication of success or failure, you should see a green checkmark or a red cross next to the commit and a badge on the top of the README file in the Development branch.</p>
+<p>Like this: <img alt="Tests" src="https://github.com/mike-pisman/PollingApp/actions/workflows/tests.yaml/badge.svg?branch=Development" /></p>
+<h2 id="postman-testing"><a href="https://www.postman.com/use-cases/api-testing-automation/">Postman Testing</a></h2>
+<p>Postman is a great tool for front-end developers. It can help with testing the API without having to learn the back-end. It provides a GUI for testing APIs called <a href="https://learning.postman.com/docs/postman-flows/flows-intro/flows-overview/">flows</a>.</p>
+<p>More testing with postman coming soon...</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 University Polling
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/unipoll" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.expand", "navigation.sections", "navigation.top", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "content.tabs", "content.code.annotate", "content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../termynal.js"></script>
+      
+    
+  </body>
+</html>
